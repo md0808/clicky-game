@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Angel Trumpet",
+    "image": "./assets/plant-images/AngelTrumpet.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Banana Flower",
+    "image": "./assets/plant-images/BanannaTree.jpg"
+  }
+]
