@@ -18,6 +18,8 @@ const instructions = [
 class Container extends Component {
   //this sets the initial state, when everything is loaded. On click events with trigger changes in state
   state = {
+    //pass on click to scoreboard
+
     //Direction state will trigger
     direction: instructions[0],
     //This will be changed by the arrayShuffle once I get the images showing.
@@ -26,47 +28,75 @@ class Container extends Component {
     justClicked: "",
     //this will hold an array of the id's of the cards that have been clicked
     clicked: [],
-    //This will increase each time
+    //This will increase each time until the user double clicks, then reset to 0
     currentScore: 0,
     // if current score >= high score, replaces high score
     highScore: 0
   };
 
-  handleClick() {
-    //
-  }
+  handleClick = (id, name) => {
+    // this is triggered in the card component. How doe s
+    const clickedArray = [...this.state.clicked];
+    let score = this.state.currentScore;
+    // let currentHighScore = this.state.highScore;
+    // if (score >= currentHighScore) {
+    //   this.setState({
+    //     highScore: score
+    //   });
+    if (clickedArray.includes(id)) {
+      this.setState({
+        currentScore: 0,
+        clicked: [],
+        justClicked: name,
+        plantsArray: this.arrayShuffle()
+      });
+    } else {
+      score++;
+      clickedArray.push(id);
+
+      this.setState({
+        currentScore: score,
+        clicked: clickedArray,
+        justClicked: name,
+        plantsArray: this.arrayShuffle()
+      });
+      console.log("doesn't include");
+    }
+
+    // on click, needs to check  this.state.clicked to see if the id is already in the array of clicked objects.
+    // if the object has already been clicked:
+    //game over - current score is reset to zero
+    //set directions to instructions[2]
+    // else increase current score +1
+    //if currentscore >= highscore, set high score
+    //set just clicked which sends the name of the plant they just clicked to the gameboard component.
+    // then triggers arrayShuffle(this.state.plantsArray)
+    // updates the plantsArray state to arrayshuffle.
+  };
 
   arrayShuffle() {
     // Takes in the array of plants from the json
     //Durstenfeld Shuffle
-    //   function shuffleArray(array) {
-    //     for (var i = array.length - 1; i > 0; i--) {
-    //         var j = Math.floor(Math.random() * (i + 1));
-    //         var temp = array[i];
-    //         array[i] = array[j];
-    //         array[j] = temp;
-    //     }
-    // }
-
-    //takes the plants starting with the original array
-    let startArray = [...plants];
-    for (let i = startArray.length - 1; i > 0; i--) {
+    let tempArray = [...plants];
+    for (let i = tempArray.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
-      let start = startArray[i];
-      start = startArray[j];
-      startArray[j] = start;
+      let temp = tempArray[i];
+      tempArray[i] = tempArray[j];
+      tempArray[j] = temp;
     }
-    return startArray;
+    return tempArray;
   }
 
-  //How do I put the Card component within the gameboard component?
+  // this is what rerenders when react senses a change.
   render() {
+    console.log(this.state.currentScore);
     return (
       <div className="container">
         <div className="row">
           <Gameboard
             justClicked={this.state.justClicked}
             plantsArray={this.state.plantsArray}
+            handleClick={this.handleClick}
           />
           <Scoreboard
             direction={this.state.direction}

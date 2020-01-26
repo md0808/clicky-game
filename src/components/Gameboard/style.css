@@ -1,5 +1,13 @@
 .gameboard {
-  background-color: rgb(255, 255, 255, 0.4);
-  color: #0b2b1a;
+  background-color: rgb(230, 224, 255);
+  color: #000000;
   border-radius: 30px;
+}
+p {
+  font-family: "Poiret One", cursive;
+}
+h2,
+h3,
+h4 {
+  font-family: "Monoton", cursive;
 }

@@ -2,81 +2,81 @@
   {
     "id": 1,
     "name": "Angel Trumpet",
-    "image": "./assets/plant-images/AngelTrumpet.jpg"
+    "image": "./plant-images/AngelTrumpet.jpg"
   },
   {
     "id": 2,
     "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "image": "./plant-images/BananaTree.jpg"
   },
   {
     "id": 3,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Cape Sundew",
+    "image": "./plant-images/CapeSundew.jpg"
   },
   {
     "id": 4,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Corpse Flower",
+    "image": "./plant-images/corpseFlower.jpg"
   },
   {
     "id": 5,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Durian Fruit",
+    "image": "./plant-images/Durian.jpg"
   },
   {
     "id": 6,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Hammer Orchid",
+    "image": "./plant-images/HammerOrchid.png"
   },
   {
     "id": 7,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Hydnora",
+    "image": "./plant-images/hydnora.jpg"
   },
   {
     "id": 8,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Lantern Flower",
+    "image": "./plant-images/LanternFlower.jpg"
   },
   {
     "id": 9,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Lithops",
+    "image": "./plant-images/Lithops.jpg"
   },
   {
     "id": 10,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Mother of Thousands",
+    "image": "./plant-images/MotherofThousands.jpg"
   },
   {
     "id": 11,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Passion Flower",
+    "image": "./plant-images/Passionflower.jpg"
   },
   {
     "id": 12,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Pitaya",
+    "image": "./plant-images/Pitaya.jpg"
   },
   {
     "id": 13,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "rafflesia",
+    "image": "./plant-images/rafflesia.jpg"
   },
   {
     "id": 14,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Starfish Flower",
+    "image": "./plant-images/StarfishFlower.jpg"
   },
   {
     "id": 15,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Venus Fly Trap",
+    "image": "./plant-images/VenusFlyTrap.jpg"
   },
   {
     "id": 16,
-    "name": "Banana Flower",
-    "image": "./assets/plant-images/BanannaTree.jpg"
+    "name": "Voodoo Lily",
+    "image": "./plant-images/voodoolily.jpg"
   }
 ]
