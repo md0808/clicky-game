@@ -5,9 +5,9 @@ import "./style.css";
 //This component holds an onClick even which triggers a function
 function Card(props) {
   return (
-    <div className="col-lg-3 img-holder">
+    <div className="col-lg-3 img-holder mb-3">
       <img
-        className="plant-image img-fluid mb-3"
+        className="plant-image img-fluid "
         src={props.img}
         alt={props.name}
         key={props.id}

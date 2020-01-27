@@ -8,8 +8,8 @@ function Gameboard(props) {
       <div className="row">
         <div className="col-sm-12 mx-auto">
           <h2 className="mt-2 mx-auto text-center">
-            <span>You clicked</span>
-            <span>{props.justClicked}</span>
+            <span>You clicked: </span>
+            <p className="plant-name"> {props.justClicked}</p>
           </h2>
           <div className="row m-2 mb-3">
             {props.plantsArray.map(plant => (

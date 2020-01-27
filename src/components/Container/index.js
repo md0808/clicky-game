@@ -38,13 +38,13 @@ class Container extends Component {
     // this is triggered in the card component. How doe s
     const clickedArray = [...this.state.clicked];
     let score = this.state.currentScore;
-    // let currentHighScore = this.state.highScore;
-    // if (score >= currentHighScore) {
-    //   this.setState({
-    //     highScore: score
-    //   });
+    let currentHighScore = this.state.highScore;
+    if (currentHighScore <= score) {
+      currentHighScore = score;
+    }
     if (clickedArray.includes(id)) {
       this.setState({
+        highScore: currentHighScore,
         currentScore: 0,
         clicked: [],
         justClicked: name,
