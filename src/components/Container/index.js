@@ -31,7 +31,8 @@ class Container extends Component {
     //This will increase each time until the user double clicks, then reset to 0
     currentScore: 0,
     // if current score >= high score, replaces high score
-    highScore: 0
+    highScore: 0,
+    outcome: "w"
   };
 
   handleClick = (id, name) => {
@@ -44,23 +45,26 @@ class Container extends Component {
     }
     if (clickedArray.includes(id)) {
       this.setState({
+        direction: instructions[2],
         highScore: currentHighScore,
         currentScore: 0,
         clicked: [],
         justClicked: name,
-        plantsArray: this.arrayShuffle()
+        plantsArray: this.arrayShuffle(),
+        outcome: "l"
       });
     } else {
       score++;
       clickedArray.push(id);
 
       this.setState({
+        direction: instructions[1],
         currentScore: score,
         clicked: clickedArray,
         justClicked: name,
-        plantsArray: this.arrayShuffle()
+        plantsArray: this.arrayShuffle(),
+        outcome: "w"
       });
-      console.log("doesn't include");
     }
 
     // on click, needs to check  this.state.clicked to see if the id is already in the array of clicked objects.
@@ -94,6 +98,7 @@ class Container extends Component {
       <div className="container">
         <div className="row">
           <Gameboard
+            outcome={this.state.outcome}
             justClicked={this.state.justClicked}
             plantsArray={this.state.plantsArray}
             handleClick={this.handleClick}

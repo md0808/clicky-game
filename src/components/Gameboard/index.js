@@ -14,6 +14,7 @@ function Gameboard(props) {
           <div className="row m-2 mb-3">
             {props.plantsArray.map(plant => (
               <Card
+                outcome={props.outcome}
                 id={plant.id}
                 key={plant.id}
                 name={plant.name}
